@@ -1,0 +1,11 @@
+{
+  "rules": {
+    "startedAt": {
+      ".read": true,
+      ".write": "newData.val() === now && newData.parent().child('attempt').val() === 'TROQUE_PELA_SENHA'"
+    },
+    "attempt": {
+      ".write": true
+    }
+  }
+}
